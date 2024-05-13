@@ -4,7 +4,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api")
-public class NameController {
+public class SwaggerController {
 
     @GetMapping("/getName")
     public String getName(@RequestParam String name) {
