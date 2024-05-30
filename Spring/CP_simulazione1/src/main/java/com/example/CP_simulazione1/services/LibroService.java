@@ -36,8 +36,8 @@ public class LibroService {
         return null;
     }
 
-    public LibroDTO updateLibro(LibroDTO libroDTO) {
-        Libro libro = libroRepository.findById(libroDTO.getId()).orElse(null);
+    public LibroDTO updateLibro(LibroDTO libroDTO, Long id) {
+        Libro libro = libroRepository.findById(id).orElse(null);
         if (libro != null) {
             libro.setTitle(libroDTO.getTitle());
             libro.setGenre(libroDTO.getGenre());
