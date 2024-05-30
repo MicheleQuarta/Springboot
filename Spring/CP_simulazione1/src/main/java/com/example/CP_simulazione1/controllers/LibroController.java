@@ -32,7 +32,7 @@ public class LibroController {
     @PutMapping("/{id}")
     public LibroDTO updateLibro(@PathVariable Long id, @RequestBody LibroDTO libroDto) {
         libroDto.setId(id);
-        return libroService.updateLibro(libroDto);
+        return libroService.updateLibro(libroDto,id);
     }
 
     @DeleteMapping("/{id}")
