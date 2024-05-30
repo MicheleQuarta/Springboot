@@ -37,8 +37,8 @@ public class AutoreService {
         return null;
     }
 
-    public AutoreDto updateAutore(AutoreDto autoreDto) {
-        Autore autore = autoreRepository.findById(autoreDto.getId()).orElse(null);
+    public AutoreDto updateAutore(AutoreDto autoreDto, Long id) {
+        Autore autore = autoreRepository.findById(id).orElse(null);
         if (autore != null) {
             autore.setName(autoreDto.getName());
             autore.setNationality(autoreDto.getNationality());
