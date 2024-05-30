@@ -36,7 +36,6 @@ public class LibroService {
         return null;
     }
 
-    // Metodo per aggiornare un Libro
     public LibroDTO updateLibro(LibroDTO libroDTO) {
         Libro libro = libroRepository.findById(libroDTO.getId()).orElse(null);
         if (libro != null) {
