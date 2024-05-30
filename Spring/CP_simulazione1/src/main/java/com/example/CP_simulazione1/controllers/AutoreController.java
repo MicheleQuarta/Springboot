@@ -32,7 +32,7 @@ public class AutoreController {
     @PutMapping("/{id}")
     public AutoreDto updateAutore(@PathVariable Long id, @RequestBody AutoreDto autoreDto) {
         autoreDto.setId(id);
-        return autoreService.updateAutore(autoreDto);
+        return autoreService.updateAutore(autoreDto,id);
     }
 
     @DeleteMapping("/{id}")
