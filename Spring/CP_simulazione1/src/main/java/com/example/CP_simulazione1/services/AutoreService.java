@@ -29,7 +29,6 @@ public class AutoreService {
         return autoriDtoList;
     }
 
-    // Metodo per ottenere un Autore per ID
     public AutoreDto getAutoreByID(Long id) {
         Autore autore = autoreRepository.findById(id).orElse(null);
         if (autore != null) {
