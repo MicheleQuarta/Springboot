@@ -1,0 +1,20 @@
+L'obiettivo di questo esercizio è sviluppare un'applicazione Spring Boot per la gestione di
+libri e autori, seguendo l'architettura MVC.
+
+2. Implementare un’applicazione che rispetti l’architettura MVC (con i layer
+Controller, Service e Repository) per la gestione delle operazioni CRUD
+dell’entità Autore:
+○ Create: POST /authors
+○ Read: GET /authors e GET /authors/{id}
+○ Update: PUT /authors/{id}
+○ Delete: DELETE /authors/{id}
+3. Bonus: a) Definire un’entità Libro con i seguenti attributi:
+○ ID: Identificativo unico del libro.
+○ Title: Titolo del libro.
+○ PublicationYear: Anno di pubblicazione.
+○ Genre: Genere del libro.
+4. b) Aggiungere una relazione OneToMany tra Autore e Libro:
+○ Un autore può avere più libri, ma un libro ha un solo autore.
+5. c) Implementare la gestione della creazione di un nuovo Libro specificando
+nella richiesta anche l'Autore:
+○ POST /book
